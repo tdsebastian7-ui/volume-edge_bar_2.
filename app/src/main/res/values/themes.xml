@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.VolumeGestureApp" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Style for slide-up and slide-down animations -->
+    <style name="VolumeDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Style for the volume overlay DialogFragment -->
+    <style name="Theme.VolumeGestureApp.Dialog" parent="android:Theme.Material.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/VolumeDialogAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item> <!-- 40% translucent dim -->
+    </style>
+
+</resources>

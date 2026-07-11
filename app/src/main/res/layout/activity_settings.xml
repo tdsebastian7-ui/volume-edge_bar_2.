@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#1A1A1F"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Theme Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theme Mode"
+                android:textColor="#1A1A1F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_theme_system"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="System"
+                    android:textColor="#1A1A1F"/>
+
+                <RadioButton
+                    android:id="@+id/rb_theme_light"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Light"
+                    android:textColor="#1A1A1F"/>
+
+                <RadioButton
+                    android:id="@+id/rb_theme_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dark"
+                    android:textColor="#1A1A1F"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Trigger Gesture Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trigger Gesture"
+                android:textColor="#1A1A1F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_trigger_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_trigger_long_press"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Long Press"
+                    android:textColor="#1A1A1F"/>
+
+                <RadioButton
+                    android:id="@+id/rb_trigger_edge_swipe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Edge Swipe"
+                    android:textColor="#1A1A1F"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Lock Sidebar Position Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lock Sidebar Position"
+                    android:textColor="#1A1A1F"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prevent the edge bar from being dragged"
+                    android:textColor="#80000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switch_sidebar_locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- Edge Side Bar Styling Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edge Side Bar Appearance"
+                android:textColor="#1A1A1F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Color Preview -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Edge Color Preview"
+                    android:textColor="#80000000"
+                    android:textSize="14sp"/>
+                <View
+                    android:id="@+id/view_edge_preview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#26000000"/>
+            </LinearLayout>
+
+            <!-- Color Sliders -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opacity"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_edge_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_edge_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_edge_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_edge_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Size Options -->
+            <TextView
+                android:id="@+id/tv_edge_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pill Width (6dp)"
+                android:textColor="#1A1A1F"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <SeekBar
+                android:id="@+id/sb_edge_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="2"
+                android:max="30"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_edge_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pill Height (80dp)"
+                android:textColor="#1A1A1F"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <SeekBar
+                android:id="@+id/sb_edge_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="40"
+                android:max="250"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- Pop-up Window Styling Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pop-up Window Appearance"
+                android:textColor="#1A1A1F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Color Preview -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Popup Color Preview"
+                    android:textColor="#80000000"
+                    android:textSize="14sp"/>
+                <View
+                    android:id="@+id/view_popup_preview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#CCF5F5F7"/>
+            </LinearLayout>
+
+            <!-- Color Sliders -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opacity"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_popup_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_popup_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_popup_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textColor="#1A1A1F"
+                android:textSize="12sp"/>
+            <SeekBar
+                android:id="@+id/sb_popup_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Size Options -->
+            <TextView
+                android:id="@+id/tv_popup_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popup Width (72dp)"
+                android:textColor="#1A1A1F"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <SeekBar
+                android:id="@+id/sb_popup_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="50"
+                android:max="150"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_popup_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popup Height (300dp)"
+                android:textColor="#1A1A1F"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <SeekBar
+                android:id="@+id/sb_popup_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="150"
+                android:max="500"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

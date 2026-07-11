@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 *.iml
 .gradle
-/local.properties
+build/
+local.properties
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -9,14 +9,6 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
-/build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
-=======
-/build
-# Project exclude paths
-/.gradle/
-/src/
->>>>>>> 172c14a7883620f6b01e1466c4940b2efc971634

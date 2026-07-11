@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="72dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/overlay_card_bg"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:elevation="12dp">
+
+        <!-- Volume Percentage Value Text -->
+        <TextView
+            android:id="@+id/tv_volume_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textColor="#1A1A1F"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Vertical Volume Slider (SeekBar) -->
+        <com.example.volumegestureapp.VerticalSeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="24dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#1A1A1F"
+            android:thumbTint="#1A1A1F"
+            android:splitTrack="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VolumeGestureApp</string>
+    <string name="accessibility_service_label">Volume Control Gesture Interceptor</string>
+    <string name="accessibility_service_description">Intercepts back button or swipe gesture long-press system-wide to display a sleek, light glassmorphic media volume controller overlay.</string>
+</resources>

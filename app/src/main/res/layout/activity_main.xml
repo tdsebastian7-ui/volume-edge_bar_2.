@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F7"
+    android:padding="28dp">
+
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#12000000"
+        android:gravity="center"
+        android:text="▲"
+        android:textColor="#1A1A1F"
+        android:textSize="32sp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume Gesture App"
+        android:textColor="#1A1A1F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control your media volume system-wide by holding the back gesture"
+        android:textColor="#80000000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"
+        android:paddingHorizontal="16dp"/>
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Start Volume Service"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1A1A1F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Settings"
+        android:textColor="#1A1A1F"
+        android:backgroundTint="#E5E5E7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
+
